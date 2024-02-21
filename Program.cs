@@ -16,7 +16,10 @@ Console.ForegroundColor = ConsoleColor.Red; // Change text color to red
 Console.WriteLine("This is some text");
 Console.ResetColor(); // Reset the color
 */
-void bootlogo1()
+
+// this is the first logo option not in use
+
+/*void bootlogo1()
 {
     Console.WriteLine("   ᐰᐰ    ");
     Console.WriteLine(" ᐰ    ᐰ  ");
@@ -30,7 +33,10 @@ void bootlogo1()
     Console.WriteLine("╔═╗╔═╗┌─┐┬  ┬");
     Console.WriteLine("╚═╗║ ╦│  │  │");
     Console.WriteLine("╚═╝╚═╝└─┘┴─┘┴"); 
-}
+}*/
+
+// This is the second logo currently in use
+
 void bootlogo2()
 {
     Console.ForegroundColor = ConsoleColor.Green;
