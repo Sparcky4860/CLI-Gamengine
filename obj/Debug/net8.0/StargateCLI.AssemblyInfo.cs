@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StargateCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b195e003e495f252c59075e5adbd9a2ce4a68027")]
 [assembly: System.Reflection.AssemblyProductAttribute("StargateCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StargateCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,3 +12,4 @@
 /Users/sparckyancientpack/stargate cli/StargateCLI/obj/Debug/net8.0/StargateCLI.pdb
 /Users/sparckyancientpack/stargate cli/StargateCLI/obj/Debug/net8.0/StargateCLI.genruntimeconfig.cache
 /Users/sparckyancientpack/stargate cli/StargateCLI/obj/Debug/net8.0/ref/StargateCLI.dll
+/Users/sparckyancientpack/stargate cli/StargateCLI/obj/Debug/net8.0/StargateCLI.sourcelink.json
