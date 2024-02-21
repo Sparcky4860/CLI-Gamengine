@@ -57,10 +57,10 @@ void mainenu()
 {
 bootlogo2();
 Console.WriteLine("=====menu=====");
-Console.WriteLine("1. demo");
-Console.WriteLine("2. demo");
-Console.WriteLine("3. demo");
-Console.WriteLine("0. exit");
+Console.WriteLine("1. New Game");
+Console.WriteLine("2. Load Game");
+Console.WriteLine("3. Options");
+Console.WriteLine("0. Exit");
 Console.WriteLine("");
 Console.WriteLine(">");
 var menu =Console.ReadLine();
@@ -80,6 +80,7 @@ var menu =Console.ReadLine();
             options();
             break;
         case "0":
+            Console.Clear();
             Console.WriteLine("exiting...");
             Thread.Sleep(999);
             mainenuOpen = false;
