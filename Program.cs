@@ -37,10 +37,11 @@ Console.ResetColor(); // Reset the color
 
 // This is the second logo currently in use
 bool mainenuOpen = true;
+string name = "none";
 
 void bootlogo2()
 {
-    Console.ForegroundColor = ConsoleColor.Green;
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("   ᐰᐰ    ");
     Console.WriteLine(" ᐰ    ᐰ  ");
     Console.WriteLine("   ᐰᐰ    ");
@@ -50,17 +51,21 @@ void bootlogo2()
     Console.WriteLine("  ᐰ   ᐰ  ╔═╗╔═╗┌─┐┬  ┬");
     Console.WriteLine(" ᐰ     ᐰ ╚═╗║ ╦│  │  │");
     Console.WriteLine("ᐰ       ᐰ╚═╝╚═╝└─┘┴─┘┴"); 
-    Console.ResetColor();
-    Console.WriteLine("A stargate fan game."); 
+    Console.ForegroundColor = ConsoleColor.DarkGray;
+    Console.WriteLine("A stargate fan game.");
+    Console.ResetColor(); 
 } 
 void mainenu()
 {
 bootlogo2();
+Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("=====menu=====");
+Console.ForegroundColor = ConsoleColor.DarkYellow;
 Console.WriteLine("1. New Game");
 Console.WriteLine("2. Load Game");
 Console.WriteLine("3. Options");
 Console.WriteLine("0. Exit");
+Console.ResetColor(); 
 Console.WriteLine("");
 Console.WriteLine(">");
 var menu =Console.ReadLine();
@@ -81,7 +86,9 @@ var menu =Console.ReadLine();
             break;
         case "0":
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("exiting...");
+            Console.ResetColor(); 
             Thread.Sleep(999);
             mainenuOpen = false;
             break;
@@ -93,17 +100,22 @@ var menu =Console.ReadLine();
 
 void options()
 {
-    throw new NotImplementedException();
+    Console.WriteLine("error 404");
+    Console.Clear();
 }
 
 void loadgame()
 {
-    throw new NotImplementedException();
+    Console.WriteLine("error 404");
+    Console.Clear();
 }
 
 void newgame()
 {
-    throw new NotImplementedException();
+    mainenuOpen = false;
+    Console.Clear();
+    Console.WriteLine("name:");
+    name = Console.ReadLine();
 }
 
 
