@@ -2,8 +2,16 @@ public class CLIGamePrep{
 ClIPlayer player = new ClIPlayer(); 
 CLISettings settings = new CLISettings();
 ClIMiscellaneous miscellaneous = new ClIMiscellaneous();
-CLIDemo demo = new CLIDemo();
-CLIInventory inventory = new CLIInventory();
+public void newgame()
+{
+    settings.mainenuOpen = false;
+    Console.Clear();
+    Console.WriteLine("set a name for your save:");
+    miscellaneous.savename = Console.ReadLine();
+    //Playerinfo();
+    this.Playerinfo();
+
+}
 public void Playerinfo()
 {
     Console.Clear();
@@ -543,7 +551,7 @@ void start()
                     start();
                     break;
                     case"2":
-                    demo.demo1();
+                    //demo.demo1();
                     break;
                     default:
                     start();
