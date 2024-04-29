@@ -1,0 +1,2 @@
+dotnet build and donet run to run the file
+only dotnet run for some reason

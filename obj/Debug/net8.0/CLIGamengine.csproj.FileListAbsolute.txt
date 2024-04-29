@@ -1,0 +1,29 @@
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.deps.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.runtimeconfig.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.pdb
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfoInputs.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfo.cs
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.csproj.CoreCompileInputs.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.sourcelink.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/refint/CLIGamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.pdb
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.genruntimeconfig.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/ref/CLIGamengine.dll
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.deps.json
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.runtimeconfig.json
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.dll
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.pdb
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfoInputs.cache
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfo.cs
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.csproj.CoreCompileInputs.cache
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.dll
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/refint/CLIGamengine.dll
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.pdb
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.genruntimeconfig.cache
+/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/obj/Debug/net8.0/ref/CLIGamengine.dll

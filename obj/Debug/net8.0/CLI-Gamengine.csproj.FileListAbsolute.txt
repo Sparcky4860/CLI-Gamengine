@@ -1,0 +1,15 @@
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLI-Gamengine
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLI-Gamengine.deps.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLI-Gamengine.runtimeconfig.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLI-Gamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/bin/Debug/net8.0/CLI-Gamengine.pdb
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.AssemblyInfoInputs.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.AssemblyInfo.cs
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.csproj.CoreCompileInputs.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.sourcelink.json
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/refint/CLI-Gamengine.dll
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.pdb
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/CLI-Gamengine.genruntimeconfig.cache
+/Users/sparckyancientpack/stargate cli/CLI-Gamengine/obj/Debug/net8.0/ref/CLI-Gamengine.dll
