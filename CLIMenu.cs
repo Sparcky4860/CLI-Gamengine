@@ -60,6 +60,7 @@ public class CLIMenu
                 case "0":
                     break;
                     CLISettings.MainenuOpen = false;
+                    //ClIGameBackup.WriteBackup(/*i dont know waht to put here*/);
                 default:
 
                     break;
