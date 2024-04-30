@@ -7,6 +7,8 @@ CLILogo logo = new CLILogo();
 CLIMenu menu = new CLIMenu();
 //CLIConfig config = new CLIConfig();
 
+//CLIGameBackup.ReadBackup(string.Empty);
+//i nead help
 menu.MainMenu();
 //end
 

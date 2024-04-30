@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CLIGamengine
-build_property.ProjectDir = /run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/
+build_property.ProjectDir = /Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zbBoVC2wwNx5vfJDhPn+4ZpeHJLQRd1IsftsJ929NyQ4FnQ/76WVXw8KmKqfv3SymZssfQ+ZybQwXJ1vWFukNw==",
+  "dgSpecHash": "00AUVJOUAf7ISe2v6HhXzK+HCWIuEYdOCXtXbr8cSpaYZHRcWk8rpeFQsjBuYaoH5UqGnEqcCSlmu+djVnhdUQ==",
   "success": true,
-  "projectFilePath": "/run/media/crystal/Samsung Flash Drive/Coding/NOTMINE/CLI-Gamengine(Sparcky)/CLI-Gamengine/CLIGamengine.csproj",
-  "expectedPackageFiles": [
-    "/home/crystal/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/CLIGamengine.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
