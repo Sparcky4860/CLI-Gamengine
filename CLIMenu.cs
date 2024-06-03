@@ -2,8 +2,8 @@
 public class CLIMenu
 {
     CLILogo logo = new CLILogo();
-    CLIPlayer player = new CLIPlayer();
-    // CLISettings settings = new CLISettings();
+    ClIPlayer player = new ClIPlayer();
+    CLISettings settings = new CLISettings();
     CLIGamePrep gameprep = new CLIGamePrep();
     public void MainMenu()
     {
@@ -11,7 +11,7 @@ public class CLIMenu
         {
             mainenu();
         }
-        while (CLISettings.MainenuOpen == true);
+        while (settings.mainenuOpen == true);
         void mainenu()
         {
             //Optionload();
@@ -31,9 +31,9 @@ public class CLIMenu
                     Console.WriteLine("no logo");
                     break;
             }
-            Console.ForegroundColor = CLISettings.Mcolor;
+            Console.ForegroundColor = settings.mcolor;
             Console.WriteLine("=====menu=====");
-            Console.ForegroundColor = CLISettings.Dmcolor;
+            Console.ForegroundColor = settings.dmcolor;
             Console.WriteLine("1. New Game");
             Console.WriteLine("2. Load Game");
             Console.WriteLine("3. Options");
@@ -59,8 +59,7 @@ public class CLIMenu
                     break;
                 case "0":
                     break;
-                    CLISettings.MainenuOpen = false;
-                    //ClIGameBackup.WriteBackup(/*i dont know waht to put here*/);
+                    settings.mainenuOpen = false;
                 default:
 
                     break;
@@ -72,12 +71,12 @@ public class CLIMenu
     void options()
     {
         Console.Clear();
-        Console.ForegroundColor = CLISettings.Mcolor; ;
+        Console.ForegroundColor = settings.mcolor; ;
         Console.WriteLine("====option====");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.WriteLine("1. Debug");
         Console.Write("2. ");
-        if (CLISettings.ModingIsOn == true)
+        if (settings.ModingIsOn == true)
         {
             Console.ForegroundColor = ConsoleColor.Green;
         }
@@ -86,7 +85,7 @@ public class CLIMenu
             Console.ForegroundColor = ConsoleColor.Red;
         }
         Console.WriteLine("moding");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.WriteLine("3. Menu Colour");
         Console.WriteLine("0. Exit");
         Console.ResetColor();
@@ -102,13 +101,13 @@ public class CLIMenu
                 break;
             case "2":
                 //Console.WriteLine("demo 2");
-                if (CLISettings.ModingIsOn == true)
+                if (settings.ModingIsOn == true)
                 {
-                    CLISettings.ModingIsOn = false;
+                    settings.ModingIsOn = false;
                 }
                 else
                 {
-                    CLISettings.ModingIsOn = true;
+                    settings.ModingIsOn = true;
                 }
                 options();
                 break;
@@ -128,67 +127,67 @@ public class CLIMenu
     void MMAColoursel()
     {
         Console.Clear();
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("1. ");
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("red");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("2. ");
         Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("Magenta");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("3. ");
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Yellow");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("4. ");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Green");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("5. ");
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Blue");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("6. ");
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("Cyan");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.Write("7. ");
         Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("Gray");
-        Console.ForegroundColor = CLISettings.Dmcolor;
+        Console.ForegroundColor = settings.dmcolor;
         Console.WriteLine("");
         Console.Write(">");
         Console.ForegroundColor = ConsoleColor.White;
         switch (Console.ReadLine())
         {
             case "1":
-                CLISettings.Mcolor = ConsoleColor.Red;
-                CLISettings.Dmcolor = ConsoleColor.DarkRed;
+                settings.mcolor = ConsoleColor.Red;
+                settings.dmcolor = ConsoleColor.DarkRed;
                 break;
             case "2":
-                CLISettings.Mcolor = ConsoleColor.Magenta;
-                CLISettings.Dmcolor = ConsoleColor.DarkMagenta;
+                settings.mcolor = ConsoleColor.Magenta;
+                settings.dmcolor = ConsoleColor.DarkMagenta;
                 break;
             case "3":
-                CLISettings.Mcolor = ConsoleColor.Yellow;
-                CLISettings.Dmcolor = ConsoleColor.DarkYellow;
+                settings.mcolor = ConsoleColor.Yellow;
+                settings.dmcolor = ConsoleColor.DarkYellow;
                 break;
             case "4":
-                CLISettings.Mcolor = ConsoleColor.Green;
-                CLISettings.Dmcolor = ConsoleColor.DarkGreen;
+                settings.mcolor = ConsoleColor.Green;
+                settings.dmcolor = ConsoleColor.DarkGreen;
                 break;
             case "5":
-                CLISettings.Mcolor = ConsoleColor.Blue;
-                CLISettings.Dmcolor = ConsoleColor.DarkBlue;
+                settings.mcolor = ConsoleColor.Blue;
+                settings.dmcolor = ConsoleColor.DarkBlue;
                 break;
             case "6":
-                CLISettings.Mcolor = ConsoleColor.Cyan;
-                CLISettings.Dmcolor = ConsoleColor.DarkCyan;
+                settings.mcolor = ConsoleColor.Cyan;
+                settings.dmcolor = ConsoleColor.DarkCyan;
                 break;
             case "7":
-                CLISettings.Mcolor = ConsoleColor.Gray;
-                CLISettings.Dmcolor = ConsoleColor.DarkGray;
+                settings.mcolor = ConsoleColor.Gray;
+                settings.dmcolor = ConsoleColor.DarkGray;
                 break;
             default:
                 MMAColoursel();
@@ -214,64 +213,64 @@ public class CLIMenu
         {
             case "1":
                 //Console.WriteLine("demo 1");
-                CLISettings.Debug = true;
+                settings.debug = true;
                 Console.Clear();
                 break;
             case "0":
                 //Console.WriteLine("demo 2");
-                CLISettings.Debug = false;
+                settings.debug = false;
                 break;
             case "logo=1":
                 //Console.WriteLine("demo 2");
-                CLISettings.Bootlogo = 1;
-                CLISettings.CustomLogoIsOn = true;
+                settings.bootlogo = 1;
+                settings.CustomLogoIsOn = true;
                 break;
             case "logo=2":
                 //Console.WriteLine("demo 2");
-                CLISettings.Bootlogo = 2;
-                CLISettings.CustomLogoIsOn = true;
+                settings.bootlogo = 2;
+                settings.CustomLogoIsOn = true;
                 break;
             case "logo=0":
                 //Console.WriteLine("demo 2");
-                CLISettings.Bootlogo = 0;
-                CLISettings.CustomLogoIsOn = true;
+                settings.bootlogo = 0;
+                settings.CustomLogoIsOn = true;
                 break;
             case "logo=3":
                 //Console.WriteLine("demo 2");
-                CLISettings.Bootlogo = 3;
-                CLISettings.CustomLogoIsOn = true;
+                settings.bootlogo = 3;
+                settings.CustomLogoIsOn = true;
                 break;
             case "mod=1":
                 //Console.WriteLine("demo 2");
-                CLISettings.ModingIsOn = true;
+                settings.ModingIsOn = true;
                 //Optionsave();
                 break;
             case "mod=0":
                 //Console.WriteLine("demo 2");
-                CLISettings.ModingIsOn = false;
+                settings.ModingIsOn = false;
                 //Optionsave();
                 break;
             case "mod=true":
                 //Console.WriteLine("demo 2");
-                CLISettings.ModingIsOn = true;
+                settings.ModingIsOn = true;
                 //Optionsave();
                 break;
             case "mod=false":
                 //Console.WriteLine("demo 2");
-                CLISettings.ModingIsOn = false;
+                settings.ModingIsOn = false;
                 //Optionsave();
                 break;
             case "nfsw=false":
-                CLISettings.NfswIsOn = false;
+                settings.NfswIsOn = false;
                 break;
             case "nfsw=0":
-                CLISettings.NfswIsOn = false;
+                settings.NfswIsOn = false;
                 break;
             case "nfsw=1":
-                CLISettings.NfswIsOn = true;
+                settings.NfswIsOn = true;
                 break;
             case "nfsw=true":
-                CLISettings.NfswIsOn = true;
+                settings.NfswIsOn = true;
                 break;
             default:
                 debugmenu();
@@ -284,5 +283,31 @@ public class CLIMenu
     {
         Console.WriteLine("error 404");
         Console.Clear();
+    }
+
+    public string textboxvar { get; set; } = "1";
+    public string textboxname { get; set; } = "";
+    public ConsoleColor textboxnamec { get; set; } =ConsoleColor.White;
+    
+    public void TextBox()
+    {
+        switch (textboxvar)
+        {
+            case "1":
+                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write($"####/");
+                Console.WriteLine(textboxname,Console.ForegroundColor = textboxnamec);
+                Console.ForegroundColor = ConsoleColor.White;
+            break;
+            case "0":
+            break;
+            default:
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("textvar mode:error 404 perss enter to contue.");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.ReadLine();
+            break;
+        }
     }
 }

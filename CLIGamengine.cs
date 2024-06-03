@@ -1,35 +1,53 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// CLIPlayer player = new CLIPlayer();
-// CLISettings settings = new CLISettings();
+ClIPlayer player = new ClIPlayer();
+CLISettings settings = new CLISettings();
 //ClIMiscellaneous miscellaneous = new ClIMiscellaneous();
 //CLIGamePrep gameprep= new CLIGamePrep();
 CLILogo logo = new CLILogo();
 CLIMenu menu = new CLIMenu();
+//clear
+Console.Clear();
+//test zone
+menu.textboxvar= "1";
+menu.textboxname = "2257";
+menu.textboxnamec = ConsoleColor.Green;
+menu.TextBox() ;
+
+Console.WriteLine("press enter to contuu");
+Console.ReadLine();
+menu.textboxname = "0000";
+menu.textboxnamec = ConsoleColor.Red;
+menu.TextBox() ;
+
+Console.WriteLine("press enter to contuu");
+Console.ReadLine();
+
+menu.textboxvar= "";
+menu.TextBox() ;
 //CLIConfig config = new CLIConfig();
 
-CLIGameBackup.ReadBackup(string.Empty);
-//i nead help
 menu.MainMenu();
 //end
+
 Console.Clear();
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("exiting...");
 Console.ResetColor();
 Thread.Sleep(999);
 Console.Clear();
-if (CLISettings.Debug == true)
+if (settings.debug == true)
 {
     Console.WriteLine("debug:");
-    Console.WriteLine(CLISettings.Debug);
+    Console.WriteLine(settings.debug);
     Console.WriteLine("ModingIsOn:");
-    Console.WriteLine(CLISettings.ModingIsOn);
+    Console.WriteLine(settings.ModingIsOn);
     Console.WriteLine("default menu:");
     logo.bootlogo1();
     Console.WriteLine("moded menu:");
     logo.bootlogo2();
     Console.WriteLine("bootlogo: ");
-    Console.Write(CLISettings.Bootlogo);
-    switch (CLISettings.Bootlogo)
+    Console.Write(settings.bootlogo);
+    switch (settings.bootlogo)
     {
         case 1:
             Console.WriteLine(" bootlogo");
@@ -44,6 +62,6 @@ if (CLISettings.Debug == true)
     //SharedVariables sharedVars = new SharedVariables();
     //sharedVars.Sharedname = name;
     //Console.WriteLine(sharedVars.Sharedname);
-    Console.WriteLine($"{CLIPlayer.Species} HP{CLIPlayer.Health} SM:{CLIPlayer.Smarts} ST:{CLIPlayer.Strength} SP:{CLIPlayer.Speed} DR;{CLIPlayer.Damageresistance} handequipped:{CLIPlayer.Handequipped} Parasite:{CLIPlayer.Parasite} Requirehost:{CLIPlayer.Requirehost} Requirepower:{CLIPlayer.Requirepower} Requirepowerlev:{CLIPlayer.Requirepowerlev} PartTeck:{CLIPlayer.PartTeck} Speciesablaty:{CLIPlayer.Speciesablaty}");
+    Console.WriteLine($"{player.Species} HP{player.health} SM:{player.smarts} ST:{player.strength} SP:{player.speed} DR;{player.Damageresistance} handequipped:{player.handequipped} Parasite:{player.Parasite} Requirehost:{player.Requirehost} Requirepower:{player.Requirepower} Requirepowerlev:{player.Requirepowerlev} PartTeck:{player.PartTeck} Speciesablaty:{player.Speciesablaty}");
 }
 
