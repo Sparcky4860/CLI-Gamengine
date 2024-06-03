@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CLIGamengine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34aaa98f8b4effc2c67439acc3f4b3566ebf1e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31c5e983627529655ff748cff8e8b0cd9fcbcb74")]
 [assembly: System.Reflection.AssemblyProductAttribute("CLIGamengine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CLIGamengine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
