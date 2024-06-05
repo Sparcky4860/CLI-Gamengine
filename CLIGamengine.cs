@@ -9,22 +9,38 @@ CLIMenu menu = new CLIMenu();
 //clear
 Console.Clear();
 //test zone
-menu.textboxvar= "1";
+menu.textboxvar= "0";
 menu.textboxname = "2257";
 menu.textboxnamec = ConsoleColor.Green;
-menu.TextBox() ;
+menu.TextBoxstart() ;
+Console.WriteLine("hello ???");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+menu.TextBoxsend();
 
-Console.WriteLine("press enter to contuu");
-Console.ReadLine();
 menu.textboxname = "0000";
+menu.textboxvar= "1";
 menu.textboxnamec = ConsoleColor.Red;
-menu.TextBox() ;
-
-Console.WriteLine("press enter to contuu");
-Console.ReadLine();
+menu.TextBoxstart() ;
+Console.WriteLine("are you a furry?");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+menu.TextBoxsend();
 
 menu.textboxvar= "";
-menu.TextBox() ;
+menu.TextBoxstart() ;
+Console.WriteLine("hello ???");
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+menu.TextBoxsend();
+
+Console.WriteLine("press enter to contuu");
+Console.ReadLine();
+
+
 //
 CLIGameBackup.ReadBackup(string.Empty);
 //i nead help

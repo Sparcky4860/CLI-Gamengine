@@ -3,7 +3,7 @@ public class CLIMenu
 {
     CLILogo logo = new CLILogo();
     CLIPlayer player = new CLIPlayer();
-    // CLISettings settings = new CLISettings();
+    //CLISettings settings = new CLISettings();
     CLIGamePrep gameprep = new CLIGamePrep();
     public void MainMenu()
     {
@@ -290,18 +290,25 @@ public class CLIMenu
     public string textboxname { get; set; } = "";
     public ConsoleColor textboxnamec { get; set; } =ConsoleColor.White;
     
-    public void TextBox()
+    public void TextBoxstart()
     {
         switch (textboxvar)
         {
             case "1":
+                Console.Clear();
                 Console.WriteLine();
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ForegroundColor = CLISettings.Mcolor;
                 Console.Write($"####/");
                 Console.WriteLine(textboxname,Console.ForegroundColor = textboxnamec);
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ForegroundColor = CLISettings.Mcolor;
             break;
             case "0":
+            Console.WriteLine();
+                Console.Clear();
+                Console.ForegroundColor = CLISettings.Mcolor;
+                Console.Write($"####/");
+                Console.WriteLine(textboxname,Console.ForegroundColor = textboxnamec);
+                Console.ForegroundColor = CLISettings.Mcolor;
             break;
             default:
             Console.ForegroundColor = ConsoleColor.Red;
@@ -309,6 +316,62 @@ public class CLIMenu
             Console.ForegroundColor = ConsoleColor.White;
             Console.ReadLine();
             break;
+        }
+    }
+        public void TextBoxsend()
+    {
+        switch (textboxvar)
+        {
+            case "1":
+                Console.WriteLine();
+                Console.ForegroundColor = CLISettings.Mcolor;
+                Console.Write($">_");
+                Console.ForegroundColor = CLIPlayer.Color;
+                //var r = Console.ReadLine();
+                Console.ForegroundColor = CLISettings.Mcolor;
+                //return r;
+            break;
+            case "0":
+            Console.WriteLine();
+                Console.ForegroundColor = CLISettings.Mcolor;
+                Console.Write($"next");
+                Console.ReadLine();
+                //return "null";
+            break;
+            default:
+            break;
+        }
+    }
+        public void InGameControls()
+    {
+        Console.ForegroundColor = CLISettings.Mcolor;
+        Console.WriteLine("enter a action uns /help for available options.");
+        Console.Write(">");
+        Console.ForegroundColor = CLIPlayer.Color;
+        switch (Console.ReadLine())
+        {
+            case "inventory":
+                break;
+            case "inv":
+                break;
+            case "chat":
+                break;
+            case "thalk":
+                break;
+            case "101":
+                //Items.sustoygun.InUse = true;
+                //Items.Start();
+                break;
+            case "/help":
+                Console.WriteLine("inv/inventory for your inventory");
+                Console.WriteLine("/ for your ");
+                Console.WriteLine("Chat/thalk to thalk");
+                break;
+            case "help":
+                Console.WriteLine("try /help");
+                break;
+            default:
+                break;
         }
     }
 }
