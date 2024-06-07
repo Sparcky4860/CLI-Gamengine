@@ -1,0 +1,5 @@
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/out/CLIGamengine
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/out/CLIGamengine.dll
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/out/CLIGamengine.deps.json
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/out/CLIGamengine.runtimeconfig.json
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/out/CLIGamengine.pdb

@@ -1,4 +1,5 @@
 #pragma warning disable CS0162
+
 public class CLIMenu
 {
     CLILogo logo = new CLILogo();
@@ -88,6 +89,7 @@ public class CLIMenu
         Console.WriteLine("moding");
         Console.ForegroundColor = CLISettings.Dmcolor;
         Console.WriteLine("3. Menu Colour");
+        Console.WriteLine("4. Save");
         Console.WriteLine("0. Exit");
         Console.ResetColor();
         Console.WriteLine("");
@@ -115,6 +117,10 @@ public class CLIMenu
             case "3":
                 //Console.WriteLine("demo 3");
                 MMAColoursel();
+                break;
+            case "4":
+                //Console.WriteLine("demo 3");
+                CLIGameBackup.WriteBackup("s");
                 break;
             case "0":
                 Console.Clear();
