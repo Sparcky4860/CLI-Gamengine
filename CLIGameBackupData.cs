@@ -130,7 +130,7 @@ public class CLIGameBackupData{
         IsCurrentCache = false;
     }
 
-    public bool ValidCache(){
+    public bool ValidateCache(){
         return IsCurrentCache;
     }
 }
