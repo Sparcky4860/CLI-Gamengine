@@ -3,10 +3,6 @@ public class CLILogo
     // CLISettings settings = new CLISettings();
     public void bootlogo1()
     {
-        if (CLISettings.Debug == false)
-        {
-            Console.Clear();
-        }
         Console.WriteLine();
         Console.ForegroundColor = CLISettings.Mcolor;
         Console.Write("╔═╗╦  ╦");

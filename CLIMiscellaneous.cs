@@ -1,6 +1,6 @@
 public class ClIMiscellaneous
 {
-    public string? savename { get; set; } = "none";
+    public string? savename { get; set; } = "none"; // this is... fines
     void Optionsave()
     {
         Console.ForegroundColor = ConsoleColor.Red;

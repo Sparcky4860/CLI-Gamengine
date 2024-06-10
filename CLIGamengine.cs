@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-CLIPlayer player = new CLIPlayer();
-CLISettings settings = new CLISettings();
+// CLIPlayer player = new CLIPlayer();
+// CLISettings settings = new CLISettings();
 //ClIMiscellaneous miscellaneous = new ClIMiscellaneous();
 //CLIGamePrep gameprep= new CLIGamePrep();
 CLILogo logo = new CLILogo();
@@ -42,7 +42,7 @@ Console.ReadLine();
 
 
 //
-CLIGameBackup.ReadBackup(string.Empty);
+// CLIGameBackup.ReadBackup(string.Empty); //don't instantly call this, not meant for it
 //i nead help
 menu.MainMenu();
 //end
