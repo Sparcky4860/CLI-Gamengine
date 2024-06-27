@@ -1,0 +1,15 @@
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.deps.json
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.runtimeconfig.json
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.dll
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/bin/Debug/net8.0/CLIGamengine.pdb
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfoInputs.cache
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.AssemblyInfo.cs
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.csproj.CoreCompileInputs.cache
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.sourcelink.json
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.dll
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/refint/CLIGamengine.dll
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.pdb
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/CLIGamengine.genruntimeconfig.cache
+/Users/sparckyancientpack/Documents/GitHub/CLI-Gamengine/obj/Debug/net8.0/ref/CLIGamengine.dll

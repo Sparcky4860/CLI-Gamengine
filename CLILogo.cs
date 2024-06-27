@@ -24,6 +24,7 @@ public class CLILogo
         Console.Write("error ");
         Console.ResetColor();
         Console.WriteLine("404");
+        CLIRuntimevar.rerror();
     }
     public void bootlogo3()
     {
@@ -31,5 +32,6 @@ public class CLILogo
         Console.Write("error ");
         Console.ResetColor();
         Console.WriteLine("404");
+        CLIRuntimevar.rerror();
     }
 }

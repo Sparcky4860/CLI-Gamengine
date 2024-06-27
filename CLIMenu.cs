@@ -7,6 +7,7 @@ public class CLIMenu
     // CLIPlayer player = new CLIPlayer();
     //CLISettings settings = new CLISettings();
     CLIGamePrep gameprep = new CLIGamePrep();
+   
     public void MainMenu()
     {
         // why are you doing it like this??
@@ -19,8 +20,9 @@ public class CLIMenu
         while (CLISettings.MainenuOpen)
         {
             //Optionload();
-            if (CLISettings.Debug == false){
-            // Console.Clear(); // stawp clearing for nowww
+            if (CLISettings.Debug == false)
+            {
+                // Console.Clear(); // stawp clearing for nowww
             }
             switch (CLISettings.Bootlogo)
             {
@@ -68,7 +70,7 @@ public class CLIMenu
                     // break; // nothing happens after the break
                     CLISettings.MainenuOpen = false;
                     break;
-                    //ClIGameBackup.WriteBackup(/*i dont know waht to put here*/); // don't do it here!
+                //ClIGameBackup.WriteBackup(/*i dont know waht to put here*/); // don't do it here!
                 default:
 
                     break;
@@ -304,13 +306,14 @@ public class CLIMenu
         // test code
         // fs paf, and the path of the saves dir
         string paf = Directory.GetCurrentDirectory();
-        string savpaf = Path.Combine(paf,"saves");
+        string savpaf = Path.Combine(paf, "saves");
         // Console.WriteLine("The current directory is {0}", paf);
         // Console.WriteLine(savpaf);
 
         // actually do checks
         Console.WriteLine("Oh? So you have a save file? (pls don't break it)");
-        if(!Directory.Exists(savpaf)){
+        if (!Directory.Exists(savpaf))
+        {
             Console.WriteLine("You don't got a saves directory! You defintely don't got any saves.");
             CLISettings.MainenuOpen = true;
             return;
@@ -321,37 +324,43 @@ public class CLIMenu
         string[] items = Directory.GetFiles(savpaf);
         // adds only files to list
         List<string> files = [];
-        foreach(string x in items){ // not used to foreach like that, rather "for(int x:y)"
+        foreach (string x in items)
+        { // not used to foreach like that, rather "for(int x:y)"
             Console.WriteLine(x);
             // this already has only files, so make sure ite ends right :3
-            if(x.Length > 4 && x.Substring(x.Length-currentFileEnd.Length).Equals(currentFileEnd)){
+            if (x.Length > 4 && x.Substring(x.Length - currentFileEnd.Length).Equals(currentFileEnd))
+            {
                 // strip off the top of the file path, and the file extension
                 //substring is start, then length
-                files.Add(x.Substring(savpaf.Length+1,x.Length-savpaf.Length-currentFileEnd.Length-1)); // +1 makes it work as well as the -1
+                files.Add(x.Substring(savpaf.Length + 1, x.Length - savpaf.Length - currentFileEnd.Length - 1)); // +1 makes it work as well as the -1
             }
         }
         int totalItems = files.Count;
 
         // now exit if there is no files
-        if(totalItems == 0){
+        if (totalItems == 0)
+        {
             Console.WriteLine("No save files found qwp");
             CLISettings.MainenuOpen = true;
             return;
         }
         Console.WriteLine("The following are your save game load options:");
-        for(int x = 0; x < totalItems; x++){
-            Console.WriteLine((x+1)+". "+files.ElementAt(x)); // note, subtract one from input
+        for (int x = 0; x < totalItems; x++)
+        {
+            Console.WriteLine((x + 1) + ". " + files.ElementAt(x)); // note, subtract one from input
         }
-        
+
         Console.WriteLine("You can use either the numbers or the filename to restore. (if you fluff up, it won't work, and you have to redo it. \"exit\" to exit)");
         Console.Write(">");
         string? req = Console.ReadLine();
-        if(req == string.Empty || req == null){
+        if (req == string.Empty || req == null)
+        {
             Console.WriteLine("Your input is empty... This will not work.");
             CLISettings.MainenuOpen = true;
             return;
         }
-        if(req.Equals("exit")){
+        if (req.Equals("exit"))
+        {
             Console.WriteLine("Exiting per user request");
             CLISettings.MainenuOpen = true;
             return;
@@ -359,45 +368,53 @@ public class CLIMenu
 
         string fin = ""; // to be used for the final load call, assigned here even though it will get assigned anyway
         // using the weird TryParse thing, if its true, the out is an int, otherwise its a str
-        if (int.TryParse(req, out int i)) {
+        if (int.TryParse(req, out int i))
+        {
             // last bit of input sanitization
-            if(i < 1){
+            if (i < 1)
+            {
                 Console.WriteLine("... don't go at or below zero");
                 CLISettings.MainenuOpen = true;
                 return;
             }
             // taking one off of input
-            if(i > totalItems - 1){
+            if (i > totalItems - 1)
+            {
                 Console.WriteLine("That number is too beeg");
                 CLISettings.MainenuOpen = true;
                 return;
             }
-            fin = files.ElementAt(i-1);
+            fin = files.ElementAt(i - 1);
         }
-        else{
+        else
+        {
             // checks to see if the exact name is in the files of each thing
             bool nFinds = true; // status of finding a value
-            foreach(string x in files) {
-                if(req.Equals(x)) { // checks each item to see if it is in the list before using it
+            foreach (string x in files)
+            {
+                if (req.Equals(x))
+                { // checks each item to see if it is in the list before using it
                     fin = x;
                     nFinds = false;
                     break; // no enable mainmenu because this is not a return, even though ourple
                 }
             }
-            if(nFinds){
+            if (nFinds)
+            {
                 Console.WriteLine("Your value was not found!");
                 CLISettings.MainenuOpen = true;
                 return; // failure
             }
         }
         // fin now has the filename, now to add the full path back onto it
-        fin = Path.Combine(savpaf,fin+currentFileEnd);
+        fin = Path.Combine(savpaf, fin + currentFileEnd);
 
         // fin should now be set properly, so run the command
         // await Task.Run(() => YourMethod());
         // bool result = await Task.Run(() => CLIGameBackup.ReadBackup(fin));
         bool result = CLIGameBackup.ReadBackup(fin);
-        if(!result){
+        if (!result)
+        {
             Console.WriteLine("Something went wrong! Likely, this is an error with the save file.");
             CLISettings.MainenuOpen = true;
             return;
@@ -407,10 +424,10 @@ public class CLIMenu
         CLISettings.MainenuOpen = true;
     }
 
-     public string textboxvar { get; set; } = "1";
+    public string textboxvar { get; set; } = "1";
     public string textboxname { get; set; } = "";
-    public ConsoleColor textboxnamec { get; set; } =ConsoleColor.White;
-    
+    public ConsoleColor textboxnamec { get; set; } = ConsoleColor.White;
+
     public void TextBoxstart()
     {
         switch (textboxvar)
@@ -420,76 +437,94 @@ public class CLIMenu
                 Console.WriteLine();
                 Console.ForegroundColor = CLISettings.Mcolor;
                 Console.Write($"####/");
-                Console.WriteLine(textboxname,Console.ForegroundColor = textboxnamec);
+                Console.WriteLine(textboxname, Console.ForegroundColor = textboxnamec);
                 Console.ForegroundColor = CLISettings.Mcolor;
-            break;
+                break;
             case "0":
-            Console.WriteLine();
+                Console.WriteLine();
                 Console.Clear();
                 Console.ForegroundColor = CLISettings.Mcolor;
                 Console.Write($"####/");
-                Console.WriteLine(textboxname,Console.ForegroundColor = textboxnamec);
+                Console.WriteLine(textboxname, Console.ForegroundColor = textboxnamec);
                 Console.ForegroundColor = CLISettings.Mcolor;
-            break;
+                break;
             default:
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("textvar mode:error 404 perss enter to contue.");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.ReadLine();
-            break;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("textvar mode:error 404 perss enter to contue.");
+                Console.ForegroundColor = ConsoleColor.White;
+                CLIRuntimevar.rerror();
+                Console.ReadLine();
+                break;
         }
     }
-        public void TextBoxsend()
+    public void TextBoxsend()
     {
         switch (textboxvar)
         {
             case "1":
-                Console.WriteLine();
-                Console.ForegroundColor = CLISettings.Mcolor;
-                Console.Write($">_");
-                Console.ForegroundColor = CLIPlayer.Color;
-                //var r = Console.ReadLine();
-                Console.ForegroundColor = CLISettings.Mcolor;
+
                 //return r;
-            break;
+                InGameControls();
+                break;
             case "0":
-            Console.WriteLine();
+                Console.WriteLine();
                 Console.ForegroundColor = CLISettings.Mcolor;
                 Console.Write($"next");
                 Console.ReadLine();
                 //return "null";
-            break;
+                break;
             default:
-            break;
+                break;
         }
     }
-        public void InGameControls()
+    public void InGameControls()
     {
+        //Console.ForegroundColor = CLISettings.Mcolor;
+        //Console.WriteLine("enter a action uns /help for available options.");
+        //Console.Write(">");
+        //Console.ForegroundColor = CLIPlayer.Color;
+        Console.WriteLine();
         Console.ForegroundColor = CLISettings.Mcolor;
-        Console.WriteLine("enter a action uns /help for available options.");
-        Console.Write(">");
+        Console.Write($">_");
         Console.ForegroundColor = CLIPlayer.Color;
+        //var r = Console.ReadLine();
+        Console.ForegroundColor = CLISettings.Mcolor;
         switch (Console.ReadLine())
         {
             case "inventory":
+                Console.WriteLine("not implemented");
+                CLIRuntimevar.rerror();
+                InGameControls();
                 break;
             case "inv":
+                Console.WriteLine("not implemented");
+                CLIRuntimevar.rerror();
+                InGameControls();
                 break;
             case "chat":
+                Console.WriteLine("not implemented");
+                CLIRuntimevar.rerror();
+                InGameControls();
                 break;
             case "thalk":
+                Console.WriteLine("not implemented");
+                CLIRuntimevar.rerror();
+                InGameControls();
                 break;
-            case "101":
+            case "next":
+                Console.Clear();
                 //Items.sustoygun.InUse = true;
                 //Items.Start();
                 break;
             case "/help":
                 Console.WriteLine("inv/inventory for your inventory");
-                Console.WriteLine("/ for your ");
-                Console.WriteLine("Chat/thalk to thalk");
+                Console.WriteLine("next to Continue");
+                Console.WriteLine("chat/thalk to thalk");
+                InGameControls();
                 break;
             case "help":
                 Console.WriteLine("try /help");
+                InGameControls();
                 break;
             default:
                 break;
