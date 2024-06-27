@@ -29,18 +29,6 @@ Console.WriteLine("");
 Console.WriteLine("");
 menu.TextBoxsend();
 
-menu.textboxvar= "";
-menu.TextBoxstart() ;
-Console.WriteLine("hello ???");
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
-menu.TextBoxsend();
-
-Console.WriteLine("press enter to contuu");
-Console.ReadLine();
-
-
 //
 // CLIGameBackup.ReadBackup(string.Empty); //don't instantly call this, not meant for it
 //i nead help
